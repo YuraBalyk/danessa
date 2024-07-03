@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>return and exchange conditions</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240703111945">
+	<!-- <link rel="" href=""> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?_v=20240703111945" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<!-- ============================== discont baner ========================================== -->
+			<section class="header__discount-banner discount-banner">
+				<p class="discount-banner__text">Безкоштовна доставка при замовенні від 3000 грн!</p>
+				<span class="discount-banner__button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+						<path d="M12.8145 1L1.50074 12.3137" stroke="#0C0B0B" stroke-width="1.5" stroke-linecap="round" />
+						<path d="M12.8145 12.3137L1.50074 1.00001" stroke="#0C0B0B" stroke-width="1.5" stroke-linecap="round" />
+					</svg>
+				</span>
+			</section>
+			<!-- ============================== header top ========================================== -->
+			<section class="header__top top-header">
+
+				<div class="top-header-container">
+					<div class="top-header__menu-wrap">
+
+						<div class="top-header__burger-menu">
+							<div class="top-header__menu menu-top">
+								<button type="button" class="menu-top__btn ">
+									<span></span>
+									<p>Меню</p>
+								</button>
+
+								<nav class="menu-top__body">
+									<ul class="menu-top__list">
+										<li class="menu-top__item"><a href="about.html" class="menu-top__link">Про нас</a></li>
+										<li class="menu-top__item"><a href="packaging.html" class="menu-top__link">Пакування</a></li>
+										<li class="menu-top__item"><a href="packaging.html" class="menu-top__link">Оплата</a></li>
+										<li class="menu-top__item"><a href="packaging.html" class="menu-top__link">Доставка</a></li>
+										<li class="menu-top__item"><a href="reviews.html" class="menu-top__link">Відгуки</a></li>
+										<li class="menu-top__item"><a href="offer-contract.html" class="menu-top__link">Договір публічної оферти</a></li>
+										<li class="menu-top__item"><a href="requisite-security.html" class="menu-top__link">Політика безпеки реквізитів</a></li>
+										<li class="menu-top__item"><a href="return-conditions.html" class="menu-top__link">Умови повернення та обміну</a></li>
+										<li class="menu-top__item"><a href="privacy-policy.html" class="menu-top__link">Політика конфіденційності</a></li>
+									</ul>
+
+
+
+									<div class="menu-top__social social-top">
+										<div class="social-top__text-wrap">
+											<h5 class="social-top__text">Напишіть нам</h5>
+											<div class="social-top__text-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="50" height="6" viewBox="0 0 50 6" fill="none">
+													<path d="M50 3.00001L45 0.113254L45 5.88676L50 3.00001ZM-6.29444e-08 3.5L45.5 3.50001L45.5 2.50001L6.29444e-08 2.5L-6.29444e-08 3.5Z" fill="#BB9185" />
+												</svg>
+											</div>
+										</div>
+
+
+										<a href="https://www.instagram.com/makeupschool_baggage?igsh=MWxucWszZmJ1NXFrNw==" class="social-top__insta" target="_blank">
+											<img src="img/header/instagram.svg" alt="instagram">
+										</a>
+										<div class="social-top__tg">
+											<img src="img/header/telegram.svg" alt="telegram">
+										</div>
+									</div>
+
+
+								</nav>
+							</div>
+						</div>
+
+						<div class="top-header__search search-header">
+							<button type="button" data-popup="#popup" class="search-header__button">
+								<img src="img/header/search.svg" alt="search">
+							</button>
+						</div>
+
+					</div>
+
+					<a href="index.html" class="top-header__logo"><img src="img/header/logo.svg" alt="logo"></a>
+
+					<div class="top-header__shopping-wrap">
+
+						<div class="top-header__favorite">
+							<a class="top-header__favorite-button" href="selected.html">
+								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.0927 6.14669C20.8512 3.78444 17.2371 3.78444 14.9956 6.14669C14.4548 6.7167 13.5465 6.7167 13.0057 6.14669C10.7642 3.78444 7.15005 3.78444 4.90859 6.14669C2.64245 8.53496 2.64245 12.4252 4.90859 14.8134L12.0965 22.3886C13.1316 23.4795 14.8697 23.4795 15.9049 22.3886L23.0927 14.8134C25.3589 12.4252 25.3589 8.53495 23.0927 6.14669ZM14.0006 4.66691C16.9484 1.85552 21.5204 1.94726 24.3622 4.94213C27.269 8.00564 27.269 12.9545 24.3622 16.018L17.1743 23.5932C15.4491 25.4113 12.5522 25.4113 10.827 23.5932L3.63913 16.018C0.732272 12.9545 0.73227 8.00564 3.63912 4.94214C6.48086 1.94726 11.0529 1.85552 14.0006 4.66691Z" fill="#0C0B0B" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="top-header__busket">
+							<a class="top-header__busket-button" href="busket.html">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M4.53715 10.4709C4.80212 8.48363 6.49726 6.99951 8.50207 6.99951H15.4979C17.5027 6.99951 19.1979 8.48363 19.4628 10.4709L20.3962 17.4709C20.7159 19.8688 18.8504 21.9995 16.4313 21.9995H7.56873C5.14958 21.9995 3.2841 19.8688 3.60382 17.4709L4.53715 10.4709Z" stroke="#0C0B0B" stroke-width="1.5" />
+									<path d="M16 9V6C16 3.79086 14.2091 2 12 2V2C9.79086 2 8 3.79086 8 6L8 9" stroke="#0C0B0B" stroke-width="1.5" stroke-linecap="round" />
+								</svg>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- ============================== bottom-header ========================================== -->
+			<section class="header__bottom bottom-header">
+				<div class="bottom-header__container">
+
+					<div class="bottom-header__menu menu">
+						<div class="bottom-header__actions-wrap">
+							<button type="button" data-popup="#popup" class="search-header__button bottom-header__search">
+								<img src="img/header/search-white.svg" alt="search">
+							</button>
+
+							<div class="bottom-header__favorite">
+								<a class="bottom-header__favorite-button" href="selected.html">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M23.0917 6.14681C20.8503 3.78456 17.2361 3.78456 14.9947 6.14681C14.4538 6.71683 13.5456 6.71683 13.0047 6.14681C10.7632 3.78456 7.14908 3.78456 4.90762 6.14681C2.64147 8.53508 2.64147 12.4253 4.90762 14.8136L12.0955 22.3888C13.1306 23.4796 14.8688 23.4796 15.9039 22.3888L23.0917 14.8136C25.3579 12.4253 25.3579 8.53508 23.0917 6.14681ZM13.9997 4.66703C16.9474 1.85564 21.5195 1.94738 24.3612 4.94226C27.2681 8.00576 27.2681 12.9546 24.3612 16.0181L17.1733 23.5933C15.4482 25.4115 12.5512 25.4115 10.826 23.5933L3.63815 16.0181C0.731295 12.9546 0.731293 8.00576 3.63815 4.94226C6.47988 1.94738 11.0519 1.85564 13.9997 4.66703Z" fill="#fff" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+
+						<div class="bottom-headr__logo">
+							<a href="index.html"><img src="img/header/logo-bottom.svg" alt="logo-bottom"></a>
+						</div>
+
+						<nav class="menu__body">
+
+							<div class="b-m-headline">
+								<button class="bottom-header__arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" viewBox="0 0 8 16" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M2.23919 8.29287C2.09475 8.12435 2.09475 7.87568 2.23919 7.70716L7.56981 1.48811C7.83938 1.17361 7.80295 0.700138 7.48846 0.430571C7.17397 0.161005 6.70049 0.197426 6.43092 0.51192L1.10031 6.73097C0.474376 7.46123 0.474376 8.5388 1.10031 9.26906L6.43092 15.4881C6.70049 15.8026 7.17397 15.839 7.48846 15.5695C7.80295 15.2999 7.83938 14.8264 7.56981 14.5119L2.23919 8.29287Z" fill="#FFFDFD" />
+									</svg>
+								</button>
+
+								<div class="bottom-headr__logo">
+									<a href="index.html"><img src="img/header/logo-bottom.svg" alt="logo-bottom"></a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+								<li class="menu__item"><a href="new.html" class="menu__link">Новинки</a></li>
+								<li class="menu__item"><a href="sale.html" class="menu__link">Знижки</a></li>
+								<li class="menu__item"><a href="catalogue.html" class="menu__link">Вся косметика</a></li>
+
+
+								<li class="menu__item item-menu__colorfix">
+									<a href="colorfix.html" class="menu__link link-menu__colorfix">
+										<p>Colorfix</p>
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29287 5.76117C8.12435 5.90562 7.87568 5.90562 7.70716 5.76117L1.48811 0.430557C1.17361 0.16099 0.700138 0.197412 0.430572 0.511906C0.161005 0.8264 0.197426 1.29988 0.51192 1.56944L6.73097 6.90006C7.46123 7.52599 8.5388 7.52599 9.26906 6.90006L15.4881 1.56944C15.8026 1.29988 15.839 0.826401 15.5695 0.511907C15.2999 0.197412 14.8264 0.160991 14.5119 0.430558L8.29287 5.76117Z" fill="#FFFDFD" />
+										</svg>
+									</a>
+
+									<div class="colorfix__popup">
+
+										<div data-tabs class=" colorfix__tabs tabs-colorfix">
+											<nav data-tabs-titles class="tabs-colorfix__navigation tabs__navigation-desctop">
+												<button data-f="glazes-col" type="button" class="tabs-colorfix__title _tab-active">Glazes Collection</button>
+												<button data-f="matte-coll" type="button" class="tabs-colorfix__title">Matte Collection</button>
+												<button data-f="nudes-coll" type="button" class="tabs-colorfix__title">Nudes Collection</button>
+												<button data-f="foils-col" type="button" class="tabs-colorfix__title">Foils Collection</button>
+												<button data-f="metallics-coll" type="button" class="tabs-colorfix__title">Metallics Collection</button>
+												<button data-f="liquid-col" type="button" class="tabs-colorfix__title">Liquid Metals Collection</button>
+												<button data-f="all" type="button" class="tabs-colorfix__title title-all">Показати всі</button>
+											</nav>
+
+											<nav data-tabs-titles class="tabs-colorfix__navigation tabs__navigation-mobile">
+												<a href="glazes.html" class="tabs-colorfix__title">Glazes Collection</a>
+												<a href="matte.html" class="tabs-colorfix__title">Matte Collection</a>
+												<a href="nudes.html" class="tabs-colorfix__title">Nudes Collection</a>
+												<a href="foils.html" class="tabs-colorfix__title">Foils Collection</a>
+												<a href="metallics.html" class="tabs-colorfix__title">Metallics Collection</a>
+												<a href="liquid-metals.html" class="tabs-colorfix__title">Liquid Metals Collection</a>
+												<a href="colorfix.html" class="tabs-colorfix__title title-all">Показати всі</a>
+											</nav>
+
+											<div data-tabs-body class="tabs-colorfix__content">
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="glazes.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/02.webp" alt="photo">
+														<p class="body-colorfix__text">Glazes Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="matte.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/04.webp" alt="photo">
+														<p class="body-colorfix__text">Matte Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="nudes.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/06.webp" alt="photo">
+														<p class="body-colorfix__text">Nudes Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="foils.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/01.webp" alt="photo">
+														<p class="body-colorfix__text">Foils Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="metallics.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/05.webp" alt="photo">
+														<p class="body-colorfix__text">Metallics Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix">
+													<a href="liquid-metals.html" class="body-colorfix__content">
+														<img class="body-colorfix__image" src="img/header/colorfix/03.webp" alt="photo">
+														<p class="body-colorfix__text">Liquid Metals Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-colorfix__body body-colorfix all-tabs">
+													<div class="body-colorfix__all-tabs">
+														<a href="glazes.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/02.webp" alt="photo">
+															<p class="body-colorfix__text">Glazes Collection</p>
+														</a>
+														<a href="matte.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/04.webp" alt="photo">
+															<p class="body-colorfix__text">Matte Collection</p>
+														</a>
+														<a href="nudes.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/06.webp" alt="photo">
+															<p class="body-colorfix__text">Nudes Collection</p>
+														</a>
+														<a href="foils.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/01.webp" alt="photo">
+															<p class="body-colorfix__text">Foils Collection</p>
+														</a>
+														<a href="metallics.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/05.webp" alt="photo">
+															<p class="body-colorfix__text">Metallics Collection</p>
+														</a>
+														<a href="liquid-metals.html" class="body-colorfix__content">
+															<img class="body-colorfix__image" src="img/header/colorfix/03.webp" alt="photo">
+															<p class="body-colorfix__text">Liquid Metals Collection</p>
+														</a>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</li>
+
+								<li class="menu__item item-menu__complexion">
+									<a href="complexion.html" class="menu__link link-menu__complexion">
+										<p>Complexion</p>
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29287 5.76117C8.12435 5.90562 7.87568 5.90562 7.70716 5.76117L1.48811 0.430557C1.17361 0.16099 0.700138 0.197412 0.430572 0.511906C0.161005 0.8264 0.197426 1.29988 0.51192 1.56944L6.73097 6.90006C7.46123 7.52599 8.5388 7.52599 9.26906 6.90006L15.4881 1.56944C15.8026 1.29988 15.839 0.826401 15.5695 0.511907C15.2999 0.197412 14.8264 0.160991 14.5119 0.430558L8.29287 5.76117Z" fill="#FFFDFD" />
+										</svg>
+									</a>
+
+									<div class="complexion__popup">
+										<div data-tabs class=" complexion__tabs tabs-complexion">
+											<nav data-tabs-titles class="tabs-complexion__navigation tabs__navigation-desctop">
+												<button type="button" class="tabs-complexion__title _tab-active">Vision Cream Cover Collection</button>
+												<button type="button" class="tabs-complexion__title">Balm Contour Collection</button>
+												<button type="button" class="tabs-complexion__title">Evolution Powder Collection</button>
+												<button type="button" class="tabs-complexion__title">Beauty Oil Collection</button>
+												<button type="button" class="tabs-complexion__title">Yummy Skin Collection</button>
+												<button type="button" class="tabs-complexion__title title-all">Показати всі</button>
+											</nav>
+											<nav class="tabs-complexion__navigation tabs__navigation-mobile">
+												<a href="vision.html" class="tabs-complexion__title">Vision Cream Cover Collection</a>
+												<a href="balm.html" class="tabs-complexion__title">Balm Contour Collection</a>
+												<a href="evolution.html" class="tabs-complexion__title">Evolution Powder Collection</a>
+												<a href="beauti-oil.html" class="tabs-complexion__title">Beauty Oil Collection</a>
+												<a href="yummy-skin.html" class="tabs-complexion__title">Yummy Skin Collection</a>
+												<a href="complexion.html" class="tabs-complexion__title title-all">Показати всі</a>
+											</nav>
+
+											<div data-tabs-body class="tabs-complexion__content">
+
+												<div class="tabs-complexion__body body-complexion">
+													<a href="vision.html" class="body-complexion__content">
+														<img class="body-complexion__image" src="img/header/complexion/01.webp" alt="">
+														<p class="body-complexion__text">Vision Cream Cover Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-complexion__body body-complexion">
+													<a href="balm.html" class="body-complexion__content">
+														<img class="body-complexion__image" src="img/header/complexion/02.webp" alt="">
+														<p class="body-complexion__text">Balm Contour Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-complexion__body body-complexion">
+													<a href="evolution.html" class="body-complexion__content">
+														<img class="body-complexion__image" src="img/header/complexion/03.webp" alt="">
+														<p class="body-complexion__text">Evolution Powder Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-complexion__body body-complexion">
+													<a href="beauti-oil.html" class="body-complexion__content">
+														<img class="body-complexion__image" src="img/header/complexion/04.webp" alt="">
+														<p class="body-complexion__text">Beauty Oil Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-complexion__body body-complexion">
+													<a href="yummy-skin.html" class="body-complexion__content">
+														<img class="body-complexion__image" src="img/header/complexion/05.webp" alt="">
+														<p class="body-complexion__text">Yummy Skin Collection</p>
+													</a>
+												</div>
+
+												<div class="tabs-complexion__body body-complexion all-tabs">
+													<div class="body-complexion__all-tabs">
+														<a href="vision.html" class="body-complexion__content">
+															<img class="body-complexion__image" src="img/header/complexion/01.webp" alt="">
+															<p class="body-complexion__text">Vision Cream Cover Collection</p>
+														</a>
+														<a href="balm.html" class="body-complexion__content">
+															<img class="body-complexion__image" src="img/header/complexion/02.webp" alt="">
+															<p class="body-complexion__text">Balm Contour Collection</p>
+														</a>
+														<a href="evolution.html" class="body-complexion__content">
+															<img class="body-complexion__image" src="img/header/complexion/03.webp" alt="">
+															<p class="body-complexion__text">Evolution Powder Collection</p>
+														</a>
+														<a href="beauti-oil.html" class="body-complexion__content">
+															<img class="body-complexion__image" src="img/header/complexion/04.webp" alt="">
+															<p class="body-complexion__text">Beauty Oil Collection</p>
+														</a>
+														<a href="yummy-skin.html" class="body-complexion__content">
+															<img class="body-complexion__image" src="img/header/complexion/05.webp" alt="">
+															<p class="body-complexion__text">Yummy Skin Collection</p>
+														</a>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="menu__item item-menu__pallets">
+									<a href="pallets.html" class="menu__link link-menu__pallets">
+										<p>Pallets</p>
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29287 5.76117C8.12435 5.90562 7.87568 5.90562 7.70716 5.76117L1.48811 0.430557C1.17361 0.16099 0.700138 0.197412 0.430572 0.511906C0.161005 0.8264 0.197426 1.29988 0.51192 1.56944L6.73097 6.90006C7.46123 7.52599 8.5388 7.52599 9.26906 6.90006L15.4881 1.56944C15.8026 1.29988 15.839 0.826401 15.5695 0.511907C15.2999 0.197412 14.8264 0.160991 14.5119 0.430558L8.29287 5.76117Z" fill="#FFFDFD" />
+										</svg>
+									</a>
+
+									<div class="pallets__popup">
+										<div data-tabs class=" pallets__tabs tabs-pallets">
+											<nav data-tabs-titles class="tabs-pallets__navigation tabs__navigation-desctop">
+												<button type="button" class="tabs-pallets__title _tab-active">Lightwork Palettes</button>
+												<button type="button" class="tabs-pallets__title">Dewy Lip and Cheek Palette</button>
+												<button type="button" class="tabs-pallets__title">Groundwork</button>
+												<button type="button" class="tabs-pallets__title title-all">Показати всі</button>
+											</nav>
+
+											<nav class="tabs-pallets__navigation tabs__navigation-mobile">
+												<a href="lightwork.html" class="tabs-pallets__title">Lightwork Palettes</a>
+												<a href="lip-and-cheek.html" class="tabs-pallets__title">Dewy Lip and Cheek Palette</a>
+												<a href="groundwork.html" class="tabs-pallets__title">Groundwork</a>
+												<a href="pallets.html" class="tabs-pallets__title title-all">Показати всі</a>
+											</nav>
+
+											<div data-tabs-body class="tabs-pallets__content">
+
+												<div class="tabs-pallets__body body-pallets">
+													<a href="lightwork.html" class="body-pallets__content">
+														<img class="body-pallets__image" src="img/header/pallets/01.webp" alt="">
+														<p class="body-pallets__text">Lightwork Palettes</p>
+													</a>
+												</div>
+
+												<div class="tabs-pallets__body body-pallets">
+													<a href="lip-and-cheek.html" class="body-pallets__content">
+														<img class="body-pallets__image" src="img/header/pallets/02.webp" alt="">
+														<p class="body-pallets__text">Dewy Lip and Cheek Palette</p>
+													</a>
+												</div>
+
+												<div class="tabs-pallets__body body-pallets">
+													<a href="groundwork.html" class="body-pallets__content">
+														<img class="body-pallets__image" src="img/header/pallets/03.webp" alt="">
+														<p class="body-pallets__text">Groundwork</p>
+													</a>
+												</div>
+
+
+												<div class="tabs-pallets__body body-pallets all-tabs">
+													<div class="body-pallets__all-tabs">
+														<a href="lightwork.html" class="body-pallets__content">
+															<img class="body-pallets__image" src="img/header/pallets/01.webp" alt="">
+															<p class="body-pallets__text">Lightwork Palettes</p>
+														</a>
+														<a href="lip-and-cheek.html" class="body-pallets__content">
+															<img class="body-pallets__image" src="img/header/pallets/02.webp" alt="">
+															<p class="body-pallets__text">Dewy Lip and Cheek Palette</p>
+														</a>
+														<a href="groundwork.html" class="body-pallets__content">
+															<img class="body-pallets__image" src="img/header/pallets/03.webp" alt="">
+															<p class="body-pallets__text">Groundwork</p>
+														</a>
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+								</li>
+
+
+								<li class="menu__item"><a href="more-yummies.html" class="menu__link">More Yummies</a></li>
+								<li class="menu__item"><a href="good-card.html" class="menu__link">Аксесуари</a></li>
+
+								<li class="menu__item useful-info">
+									<a href="" class="menu__link useful-info">
+										<p>Корисна інформація</p>
+										<svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 6 12" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.17387 5.80459C4.27017 5.91694 4.27017 6.08272 4.17387 6.19507L0.620127 10.3411C0.440416 10.5508 0.464697 10.8664 0.674359 11.0461C0.884023 11.2258 1.19967 11.2016 1.37938 10.9919L4.93313 6.84586C5.35042 6.35902 5.35042 5.64064 4.93313 5.1538L1.37938 1.00777C1.19967 0.798104 0.884022 0.773823 0.674359 0.953533C0.464696 1.13324 0.440415 1.44889 0.620126 1.65856L4.17387 5.80459Z" fill="#0C0B0B" />
+										</svg>
+									</a>
+
+									<div class="useful-info__popup">
+										<ul class="useful-info__list">
+											<li class="useful-info__item"><a href="about.html" class="useful-info__link">Про нас</a></li>
+
+											<li class="useful-info__item"><a href="packaging.html?spoller=packaging" class="useful-info__link">Пакування</a></li>
+											<li class="useful-info__item"><a href="packaging.html?spoller=payment" class="useful-info__link">Оплата</a></li>
+											<li class="useful-info__item"><a href="packaging.html?spoller=delivery" class="useful-info__link">Доставка</a></li>
+
+											<li class="useful-info__item"><a href="reviews.html" class="useful-info__link">Відгуки</a></li>
+											<li class="useful-info__item"><a href="offer-contract.html" class="useful-info__link">Договір публічної оферти</a></li>
+											<li class="useful-info__item"><a href="requisite-security.html" class="useful-info__link">Політика безпеки реквізитів</a></li>
+											<li class="useful-info__item"><a href="return-conditions.html" class="useful-info__link">Умови повернення та обміну</a></li>
+											<li class="useful-info__item"><a href="privacy-policy.html" class="useful-info__link">Політика конфіденційності</a></li>
+										</ul>
+									</div>
+								</li>
+
+							</ul>
+
+							<div class="menu-top__social social-top social-bottom">
+								<div class="social-top__text-wrap">
+									<h5 class="social-top__text">Напишіть нам</h5>
+									<div class="social-top__text-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="50" height="6" viewBox="0 0 50 6" fill="none">
+											<path d="M50 3.00001L45 0.113254L45 5.88676L50 3.00001ZM-6.29444e-08 3.5L45.5 3.50001L45.5 2.50001L6.29444e-08 2.5L-6.29444e-08 3.5Z" fill="#BB9185" />
+										</svg>
+									</div>
+								</div>
+								<a href="https://www.instagram.com/makeupschool_baggage?igsh=MWxucWszZmJ1NXFrNw==" class="social-top__insta" target="_blank">
+									<img src="img/header/instagram.svg" alt="instagram">
+								</a>
+								<div class="social-top__tg"><img src="img/header/telegram.svg" alt="telegram">
+								</div>
+							</div>
+						</nav>
+
+
+						<div class="bottom-header__shopping-wrap">
+							<div class="bottom-header__busket">
+								<a class="bottom-header__busket-button" href="busket.html">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M4.53715 10.4711C4.80212 8.48388 6.49726 6.99976 8.50207 6.99976H15.4979C17.5027 6.99976 19.1979 8.48388 19.4628 10.4711L20.3962 17.4711C20.7159 19.869 18.8504 21.9998 16.4313 21.9998H7.56873C5.14958 21.9998 3.2841 19.869 3.60382 17.4711L4.53715 10.4711Z" stroke="#fff" stroke-width="1.5" />
+										<path d="M16 9V6C16 3.79086 14.2091 2 12 2V2C9.79086 2 8 3.79086 8 6L8 9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+									</svg>
+								</a>
+							</div>
+
+							<button type="button" class="bottom-menu__icon icon-menu"><span></span></button>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- ============================== breadcrumbs ========================================== -->
+			<section class="header-breadcrumbs">
+				<div class="header-breadcrumbs__container">
+					<nav class="woocommerce-breadcrumb" aria-label="Breadcrumb">
+						<a href="http://localhost:8080">Головна</a> /
+						<a href="http://localhost:8080/product-category/colorfix/">Colorfix</a> /
+						Colorfix Glazes Crystal
+					</nav>
+				</div>
+			</section>
+			<!-- ============================== cookies ========================================== -->
+			<section class="header__cookie cookie">
+				<div class="cookie__text">
+					<p>
+						Цей сайт використовує файли cookie для зручності роботи користувачів.
+						Продовжуючи перегляд сторінок сайту, ви погоджуєтеся з <span><a href="offer-contract.html">використанням файлів cookie</a></span>
+					</p>
+				</div>
+				<div class="cookie__buttons">
+					<button class="cookie__disagree-button button-white">Не погоджуюся</button>
+					<button class="cookie__agree-button button-black">Погоджуюся</button>
+				</div>
+			</section>
+			<!-- ============================== diskont popup ========================================== -->
+			<section class="discont-popup">
+				<div class="discont-popup__wrapper">
+					<div class="discont-popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+							<path d="M12.0664 1.00001L0.752698 12.3137" stroke="#0C0B0B" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M12.0664 12.3137L0.752698 1" stroke="#0C0B0B" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</div>
+					<h1 class="discont-popup__title">-10% до твого першого замовлення!</h1>
+					<h3 class="discont-popup__subtitle">Хочеш отримати свій бонус? Заповнюй дані і ми надішлемо тобі персональний промокод :)</h3>
+					<div class="discont-popup__image">
+						<img src="img/header/discont/01.webp" alt="image">
+					</div>
+					<form action="" class="discont-popup__form form-discont-popup">
+						<div class="form-discont-popup__input-wrap">
+							<label class="form-discont-popup__label" for="instagram">Нік в Instagram</label>
+							<input class="form-discont-popup__input" type="text" id="instagram" name="instagram">
+							<span class="form-discont-popup__error"></span>
+						</div>
+						<div class="form-discont-popup__confirmation">
+							<p>
+								Підтверджуючи замовлення, я приймаю
+								<span><a href="offer-contract.html">умови використання сайту</a></span> та даю
+								<span><a href="requisite-security.html">згоду на обробку персональних даних</a></span>
+							</p>
+						</div>
+						<button class="form-discont-popup__button button-black" type="submit">Підтвердити</button>
+					</form>
+				</div>
+			</section>
+
+		</header>
+
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+
+					<div class="popup__content-wrap">
+						<button data-close type="button" class="popup__close"><img src="img/header/close.svg" alt=""></button>
+
+						<div class="popup__inside">
+							<p class="popup__title">Що саме бажаєте знайти?</p>
+							<form action="/search" method="get" class="popup__form">
+								<button type="submit" class="popup__img"><img src="img/header/search.svg" alt=""></button>
+								<input type="text" name="query" placeholder="Введіть назву продукту" class="popup__input">
+							</form>
+						</div>
+
+
+						<div class="popup__search-result result-search">
+
+
+
+							<div class="result-search__text text-search">
+								<p class="text-search__relevant">Товари, які відповідають вашому запиту:</p>
+								<div class="text-search__quantity">
+									<span>0 товарів</span>
+								</div>
+							</div>
+
+
+							<div class="result-search__content content-search">
+								<div class="content-search__items">
+
+									<!-- сюди будуть потрапляти товари -->
+
+								</div>
+							</div>
+
+							<div class="result-search__footer footer-search">
+								<a href="request.html" class="footer-search__link">Показати всі товари</a>
+							</div>
+						</div>
+
+
+
+						<div class="popup__search-noresult noresult-search">
+							<h1 class="noresult-search__title">Пошук не дав результатів</h1>
+							<p class="noresult-search__subtitle">Ми не знайшли нічого, що відповідало б вашому запиту</p>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<!-- ***************************** page__title"  ********************************** -->
+			<div class="page__title">
+				<div class="title__container">
+					<h1 class="offer-contract__title title">Умови повернення та обміну</h1>
+				</div>
+			</div>
+			<!-- ***************************** section info ********************************** -->
+			<section class="page__info info">
+				<div class="info__container">
+
+					<div class="info__terms">
+						<h1 class="info__title">Загальні положення</h1>
+
+						<div class="info__description">
+							<p>
+								1.1. Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+								labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+							<p>
+								1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam enim ad minim veniam.
+							</p>
+
+							<p>1.3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+
+					<div class="info__definitions">
+						<h1 class="info__title">Поняття і визначення</h1>
+
+						<div class="info__description">
+							<p>
+								1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+							<p>
+								1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+						</div>
+					</div>
+
+					<div class="info__contract">
+						<h1 class="info__title">Предмет договору</h1>
+
+						<div class="info__description">
+							<p>
+								1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.
+							</p>
+
+							<p>
+								1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam enim ad minim veniam.
+							</p>
+
+							<p>
+								1.3. Lorem ipsum dolor sit amet.
+							</p>
+
+							<p>
+								1.4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+							</p>
+
+							<p>
+								1.5. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+						</div>
+					</div>
+
+					<div class="info__procedure">
+						<h1 class="info__title">Порядок оформлення замовлення</h1>
+
+						<div class="info__description">
+							<p>
+								1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+							<p>
+								1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+							<p>
+								1.3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+							<p>
+								1.4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+
+			<section class="footer__write-us write-us-footer">
+				<div class="write-us-footer__container">
+					<div class="write-us-footer__img-left">
+						<img class="img-left__footer" src="img/footer/01.svg" alt="img">
+						<img class="img-left__footer-mob" src="img/footer/001.svg" alt="img">
+					</div>
+
+					<div class="write-us-footer__contentn">
+						<h1 class="write-us-footer__title">Досі не визначилися, що саме бажаєте?</h1>
+						<a href="https://www.instagram.com/makeupschool_baggage?igsh=MWxucWszZmJ1NXFrNw==" class="write-us-footer__button button-white">Напишіть нам</a>
+					</div>
+
+					<div class="write-us-footer__img-right">
+						<img class="img-right__footer" src="img/footer/02.svg" alt="img">
+						<img class="img-right__footer-mob" src="img/footer/002.svg" alt="img">
+					</div>
+				</div>
+			</section>
+			<!-- =========================================================== -->
+			<section class="footer__photo photo-footer">
+				<div class="photo-footer__items">
+					<div class="photo-footer__item"><img src="img/footer/photo/01.webp" alt="photo1"></div>
+					<div class="photo-footer__item"><img src="img/footer/photo/02.webp" alt="photo2"></div>
+					<div class="photo-footer__item"><img src="img/footer/photo/03.webp" alt="photo3"></div>
+					<div class="photo-footer__item"><img src="img/footer/photo/04.webp" alt="photo4"></div>
+					<div class="photo-footer__item"><img src="img/footer/photo/05.webp" alt="photo5"></div>
+				</div>
+			</section>
+			<!-- ============================================================= -->
+			<section class="footer__content content-footer">
+				<div class="content-footer__container">
+
+					<div class="content-footer__logo-block logo-block-footer">
+						<a href="index.html"><img class="logo-block-footer__image" src="img/footer/footer-logo.svg" alt="footer-logo"></a>
+
+
+						<div class="logo-block-footer__text">
+							<p>Косметика, яка руйнує норми краси</p>
+						</div>
+					</div>
+
+					<div class="content-footer__navigations navigations-footer">
+
+						<div class="navigations-footer__menu footer-menu1">
+							<div class="navigations-footer__title">
+								<p>Каталог</p>
+								<img class="title-footer-icon" src="img/footer/plus.svg" alt="plus">
+							</div>
+
+							<ul class="navigations-footer__list">
+								<li class="navigations-footer__item">
+									<a href="new.html" class="navigations-footer__link">Новинки</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="sale.html" class="navigations-footer__link">Знижки</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="catalogue.html" class="navigations-footer__link">Вся косметика</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="colorfix.html" class="navigations-footer__link">Colorfix</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="complexion.html" class="navigations-footer__link">Complexion</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="pallets.html" class="navigations-footer__link">Pallets</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="more-yummies.html" class="navigations-footer__link">More Yimmies</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="accesories.html" class="navigations-footer__link">Аксесуари</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="navigations-footer__menu footer-menu2">
+							<div class="navigations-footer__title">
+								<p>Додатково</p>
+								<img class="title-footer-icon" src="img/footer/plus.svg" alt="plus">
+							</div>
+
+							<ul class="navigations-footer__list">
+								<li class="navigations-footer__item">
+									<a href="about.html" class="navigations-footer__link">Про нас</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="packaging.html" class="navigations-footer__link">Пакування</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="" class="navigations-footer__link">Оплата</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="" class="navigations-footer__link">Доставка</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="navigations-footer__menu footer-menu3">
+							<div class="navigations-footer__title">
+								<p>Корисна інформація</p>
+								<img class="title-footer-icon" src="img/footer/plus.svg" alt="plus">
+							</div>
+
+							<ul class="navigations-footer__list">
+								<li class="navigations-footer__item">
+									<a href="offer-contract.html" class="navigations-footer__link">Договір публічної оферти</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="requisite-security.html" class="navigations-footer__link">Політика безпеки реквізитів</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="return-conditions.html" class="navigations-footer__link">Умови повернення та обміну</a>
+								</li>
+								<li class="navigations-footer__item">
+									<a href="error.html" class="navigations-footer__link">Політика конфіденційності</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- ============================================================== -->
+			<section class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__text">
+						<img src="img/footer/003.svg" alt="">
+						<p>“Danessa Myricks Beauty Ukraine”, 2024</p>
+					</div>
+
+					<div class="bottom-footer__media">
+						<div class="menu-top__social social-top">
+							<div class="social-top__text-wrap">
+								<h5 class="social-top__text">Напишіть нам</h5>
+								<div class="social-top__text-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="6" viewBox="0 0 50 6" fill="none">
+										<path d="M50 3.00001L45 0.113254L45 5.88676L50 3.00001ZM-6.29444e-08 3.5L45.5 3.50001L45.5 2.50001L6.29444e-08 2.5L-6.29444e-08 3.5Z" fill="#BB9185" />
+									</svg>
+								</div>
+							</div>
+
+
+							<a href="https://www.instagram.com/makeupschool_baggage?igsh=MWxucWszZmJ1NXFrNw==" class="social-top__insta" target="_blank">
+								<img src="img/header/instagram.svg" alt="instagram">
+							</a>
+							<div class="social-top__tg">
+								<img src="img/header/telegram.svg" alt="telegram">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240703111945"></script>
+</body>
+
+</html>
